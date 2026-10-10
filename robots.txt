@@ -1,0 +1,41 @@
+User-agent: *
+Allow: /
+
+# Explicit AI Scrapers & Crawlers Permissions
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GrokBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: KimiBot
+Allow: /
+
+User-agent: QwenBot
+Allow: /
+
+Sitemap: https://aqua-pathology-guide.pages.dev/sitemap.xml

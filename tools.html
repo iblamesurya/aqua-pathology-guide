@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinical Aquaculture Calculators: Boyd Ionic Ratio & TCBS Vibrio Risk Matrix | AquaPathology India</title>
+  <meta name="description" content="Free open clinical aquaculture tools: Dr. Claude Boyd's Vannamei Ionic Mineral Ratio Calculator (Mg:Ca:K) and TCBS Vibrio Colony Biosecurity Risk Matrix for shrimp farmers.">
+  <meta name="author" content="AquaPathology India Editorial Board">
+  <link rel="canonical" href="https://aquapathology.org/tools.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Clinical Shrimp Aquaculture Diagnostic & Ionic Balance Calculators",
+    "url": "https://aquapathology.org/tools.html",
+    "description": "Scientific veterinary algorithms for Litopenaeus vannamei culture: Dr. Claude Boyd's seawater ionic mineral balance calculator and TCBS agar Vibrio biosecurity risk matrix.",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "author": {
+      "@type": "Organization",
+      "name": "AquaPathology India Editorial Board",
+      "url": "https://aquapathology.org"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AquaPathology India Research Group",
+      "url": "https://aquapathology.org",
+      "sameAs": [
+        "https://ciba.icar.gov.in/",
+        "https://caa.gov.in/",
+        "https://mpeda.gov.in/",
+        "https://en.wikipedia.org/wiki/Penaeus_vannamei"
+      ]
+    },
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+  }
+  </script>
+</head>
+<body class="bg-[#030d17] text-slate-100 min-h-screen font-sans antialiased">
+  <!-- Top Navigation -->
+  <header class="border-b border-cyan-900/40 bg-[#051524]/90 backdrop-blur sticky top-0 z-50 px-4 sm:px-8 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-lg bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center font-black text-emerald-400">AP</div>
+        <div>
+          <span class="text-lg font-bold tracking-tight text-white block leading-none">AquaPathology<span class="text-emerald-400">.in</span></span>
+          <span class="text-xs text-slate-400">Clinical Aquaculture Calculators</span>
+        </div>
+      </a>
+      <div class="hidden sm:flex items-center gap-6 text-sm text-slate-300">
+        <a href="index.html#pathologies" class="hover:text-emerald-400 transition">Pathologies (12)</a>
+        <a href="tools.html" class="text-cyan-400 font-bold border-b border-cyan-400 pb-0.5">Clinical Calculators</a>
+        <a href="dataset.html" class="hover:text-cyan-400 transition">Open Dataset</a>
+        <a href="https://nextfarmbiosciences.app/pond-doctor" target="_blank" rel="noopener" class="text-emerald-400 hover:underline font-semibold">Pond Doctor Engine ↗</a>
+        <a href="https://nextfarmbiosciences.app/products" target="_blank" rel="noopener" class="bg-emerald-500 text-slate-950 font-bold px-4 py-2 rounded-lg hover:bg-emerald-400 transition text-xs">CAA Bio-Inputs ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-12">
+    <!-- Breadcrumb & Header -->
+    <div class="flex flex-wrap items-center gap-2 mb-4 text-xs font-mono text-slate-400">
+      <a href="index.html" class="hover:text-emerald-400">Home</a>
+      <span>/</span>
+      <span class="text-cyan-400">Interactive Clinical Algorithms</span>
+      <span class="bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 px-2 py-0.5 rounded ml-2">Open Access Utility</span>
+      <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-2 py-0.5 rounded">GSA &amp; FAO Formulations</span>
+    </div>
+
+    <div class="max-w-3xl mb-12">
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-4">
+        Interactive Clinical Aquaculture Diagnostic Algorithms
+      </h1>
+      <p class="text-base text-slate-300 leading-relaxed">
+        Empirical veterinary algorithms derived from peer-reviewed literature by <strong>Dr. Claude E. Boyd (Auburn University / Global Seafood Alliance)</strong> and clinical aquaculture pathology standards across India. Machine-readable client-side tools designed for farm managers, consultants, and diagnostic technicians.
+      </p>
+    </div>
+
+    <!-- Algorithm 1: Dr. Claude Boyd's Vannamei Ionic Imbalance Ratio Calculator -->
+    <section id="boyd-ionic-calculator" class="rounded-2xl border border-cyan-500/30 bg-[#061828] p-6 sm:p-10 mb-16 shadow-2xl">
+      <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 mb-8 pb-6 border-b border-slate-800">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-cyan-400 mb-2">
+            ⚗️ Algorithm 1 • Global Seafood Alliance Standard
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-2">
+            Dr. Claude Boyd’s Vannamei Ionic Mineral Ratio Calculator
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
+            In low-salinity and inland borewell prawn culture, absolute salinity does not dictate survival—the <strong>ionic ratio</strong> does. Input pond salinity and actual laboratory test results to evaluate ionic deficits and calculate precise bio-chelated or mineral salt replenishments.
+          </p>
+        </div>
+        <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl text-xs font-mono text-slate-300 space-y-1">
+          <div class="text-cyan-400 font-bold mb-1">Boyd Seawater Ratio Multipliers:</div>
+          <div>• Calcium (Ca): <span class="text-white">Salinity (ppt) × 13.5 ppm</span></div>
+          <div>• Magnesium (Mg): <span class="text-white">Salinity (ppt) × 40.0 ppm</span></div>
+          <div>• Potassium (K): <span class="text-white">Salinity (ppt) × 11.0 ppm</span></div>
+          <div>• Target Mg : Ca Ratio: <span class="text-emerald-400 font-bold">~ 3.1 : 1</span></div>
+        </div>
+      </div>
+
+      <!-- Calculator Inputs Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <!-- Salinity Input -->
+        <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl">
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+            Pond Salinity (PPT / ‰)
+          </label>
+          <div class="flex items-center gap-2">
+            <input type="number" id="salinityInput" value="8" min="1" max="45" step="0.5" class="w-full bg-slate-950 border border-cyan-500/50 rounded-lg px-4 py-2.5 text-lg font-bold text-white font-mono focus:outline-none focus:border-cyan-400">
+            <span class="text-xs text-slate-400 font-mono">ppt</span>
+          </div>
+          <p class="text-[11px] text-slate-500 mt-2">Typical range: 2 to 35 ppt</p>
+        </div>
+
+        <!-- Measured Ca -->
+        <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl">
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+            Tested Calcium ($\text{Ca}^{2+}$)
+          </label>
+          <div class="flex items-center gap-2">
+            <input type="number" id="testedCaInput" value="80" min="0" max="1500" step="5" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-lg font-bold text-white font-mono focus:outline-none focus:border-cyan-400">
+            <span class="text-xs text-slate-400 font-mono">ppm</span>
+          </div>
+          <p class="text-[11px] text-slate-500 mt-2">Target at 8 ppt: <span id="targetCaHint" class="text-cyan-300 font-mono">108 ppm</span></p>
+        </div>
+
+        <!-- Measured Mg -->
+        <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl">
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+            Tested Magnesium ($\text{Mg}^{2+}$)
+          </label>
+          <div class="flex items-center gap-2">
+            <input type="number" id="testedMgInput" value="180" min="0" max="4000" step="5" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-lg font-bold text-white font-mono focus:outline-none focus:border-cyan-400">
+            <span class="text-xs text-slate-400 font-mono">ppm</span>
+          </div>
+          <p class="text-[11px] text-slate-500 mt-2">Target at 8 ppt: <span id="targetMgHint" class="text-cyan-300 font-mono">320 ppm</span></p>
+        </div>
+
+        <!-- Measured K -->
+        <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl">
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+            Tested Potassium ($\text{K}^+$)
+          </label>
+          <div class="flex items-center gap-2">
+            <input type="number" id="testedKInput" value="45" min="0" max="1000" step="5" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-lg font-bold text-white font-mono focus:outline-none focus:border-cyan-400">
+            <span class="text-xs text-slate-400 font-mono">ppm</span>
+          </div>
+          <p class="text-[11px] text-slate-500 mt-2">Target at 8 ppt: <span id="targetKHint" class="text-cyan-300 font-mono">88 ppm</span></p>
+        </div>
+      </div>
+
+      <!-- Results Display Panel -->
+      <div class="rounded-xl border border-slate-800 bg-slate-950/80 p-6 mb-8">
+        <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-4 flex items-center justify-between">
+          <span>Diagnostic Mineral Evaluation Results</span>
+          <span id="overallIonicStatusBadge" class="bg-amber-500/20 text-amber-300 border border-amber-500/30 px-3 py-1 rounded text-xs">
+            Moderate Ionic Imbalance
+          </span>
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+          <!-- Ratio Card -->
+          <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl text-center">
+            <span class="text-xs text-slate-400 block mb-1">Mg : Ca Ratio</span>
+            <strong id="measuredRatioDisplay" class="text-2xl font-black font-mono text-amber-400 block">2.25 : 1</strong>
+            <span class="text-[10px] text-slate-500">Benchmark: &ge; 3.1 : 1</span>
+          </div>
+
+          <!-- Calcium Delta -->
+          <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl text-center">
+            <span class="text-xs text-slate-400 block mb-1">Calcium Differential</span>
+            <strong id="caDeltaDisplay" class="text-2xl font-black font-mono text-rose-400 block">-28 ppm</strong>
+            <span id="caStatusText" class="text-[10px] text-rose-300">Deficit</span>
+          </div>
+
+          <!-- Magnesium Delta -->
+          <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl text-center">
+            <span class="text-xs text-slate-400 block mb-1">Magnesium Differential</span>
+            <strong id="mgDeltaDisplay" class="text-2xl font-black font-mono text-rose-400 block">-140 ppm</strong>
+            <span id="mgStatusText" class="text-[10px] text-rose-300">Severe Deficit</span>
+          </div>
+
+          <!-- Potassium Delta -->
+          <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl text-center">
+            <span class="text-xs text-slate-400 block mb-1">Potassium Differential</span>
+            <strong id="kDeltaDisplay" class="text-2xl font-black font-mono text-rose-400 block">-43 ppm</strong>
+            <span id="kStatusText" class="text-[10px] text-rose-300">Deficit (Cramp Risk)</span>
+          </div>
+        </div>
+
+        <!-- Corrective Field Prescription Box -->
+        <div class="border-l-4 border-cyan-400 bg-cyan-950/20 p-5 rounded-r-xl text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <strong class="text-cyan-300 text-sm block mb-2">Recommended Field Prescription (Per Acre / 1-Meter Water Depth):</strong>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-lg">
+              <div class="text-emerald-400 font-bold mb-1">Option A: Bio-Chelated Liquid Intervention (Preferred)</div>
+              <p class="text-xs text-slate-300 mb-2">
+                Fastest bioavailability without raising pond pH above 8.5. Completely bypasses agricultural lime precipitation.
+              </p>
+              <div class="font-mono text-xs text-emerald-300 font-bold space-y-1">
+                <div>• Next Min: <span id="nextMinDose">5.0 Litres/acre</span> broadcast with aeration</div>
+                <div>• Next Softner: 1.0 Can/acre during evening hours</div>
+                <div>• Target: Carapace hardening within 24 to 48 hours</div>
+              </div>
+              <div class="mt-3">
+                <a href="https://nextfarmbiosciences.app/products/next-min" target="_blank" rel="noopener" class="text-cyan-400 hover:underline font-bold text-xs">
+                  Order Next Min Bio-Chelate ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-lg">
+              <div class="text-amber-400 font-bold mb-1">Option B: Agricultural Bulk Salt Chemistry Equivalent</div>
+              <p class="text-xs text-slate-300 mb-2">
+                Standard technical grade chemical salts required to compensate for calculated ionic deficits (1-meter pond depth):
+              </p>
+              <div class="font-mono text-xs text-slate-300 space-y-1">
+                <div>• Magnesium Chloride (MgCl₂·6H₂O): <span id="mgSaltDose" class="text-amber-300 font-bold">117 kg/acre</span></div>
+                <div>• Muriate of Potash (KCl): <span id="kSaltDose" class="text-amber-300 font-bold">33 kg/acre</span></div>
+                <div>• Calcium Chloride (CaCl₂): <span id="caSaltDose" class="text-amber-300 font-bold">31 kg/acre</span></div>
+              </div>
+              <p class="text-[10px] text-slate-500 mt-2">
+                *Note: Apply salts divided across 2 consecutive morning sessions to prevent osmotic shock.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Algorithm 2: TCBS Agar Vibrio Colony Biosecurity Risk Matrix -->
+    <section id="tcbs-vibrio-matrix" class="rounded-2xl border border-rose-500/30 bg-[#061828] p-6 sm:p-10 mb-16 shadow-2xl">
+      <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6 mb-8 pb-6 border-b border-slate-800">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-rose-400 mb-2">
+            🔬 Algorithm 2 • Clinical Microbiology Decision Engine
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-2">
+            TCBS Agar Vibrio Colony Biosecurity Risk Matrix
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
+            Plating pond water or hepatopancreatic macerate on <strong>Thiosulfate-Citrate-Bile Salts-Sucrose (TCBS)</strong> agar differentiates sucrose-negative green virulent strains (*V. parahaemolyticus*) from yellow strains (*V. harveyi*, *V. alginolyticus*). Input CFU counts to obtain an immediate biosecurity protocol.
+          </p>
+        </div>
+        <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl text-xs font-mono text-slate-300 space-y-1">
+          <div class="text-rose-400 font-bold mb-1">Standard Lab Risk Thresholds:</div>
+          <div>• Green Colonies &lt; 10² CFU/ml: <span class="text-emerald-400 font-bold">Normal Ecosystem</span></div>
+          <div>• Green Colonies 10² – 10³ CFU/ml: <span class="text-amber-400 font-bold">Guard / Caution</span></div>
+          <div>• Green Colonies &gt; 10³ CFU/ml: <span class="text-rose-400 font-bold">Acute Outbreak</span></div>
+          <div>• Yellow Colonies &gt; 10⁴ CFU/ml: <span class="text-rose-400 font-bold">Luminescent Threat</span></div>
+        </div>
+      </div>
+
+      <!-- Inputs for TCBS Calculator -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <!-- Green Colonies -->
+        <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl">
+          <label class="block text-xs font-bold uppercase tracking-wider text-emerald-400 mb-2">
+            Green Colonies (Sucrose -ve)
+          </label>
+          <div class="flex items-center gap-2">
+            <input type="number" id="greenCfuInput" value="1200" min="0" max="100000" step="50" class="w-full bg-slate-950 border border-emerald-500/50 rounded-lg px-4 py-2.5 text-lg font-bold text-white font-mono focus:outline-none focus:border-emerald-400">
+            <span class="text-xs text-slate-400 font-mono">CFU/ml</span>
+          </div>
+          <p class="text-[11px] text-slate-500 mt-2">V. parahaemolyticus / AHPND</p>
+        </div>
+
+        <!-- Yellow Colonies -->
+        <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl">
+          <label class="block text-xs font-bold uppercase tracking-wider text-amber-400 mb-2">
+            Yellow Colonies (Sucrose +ve)
+          </label>
+          <div class="flex items-center gap-2">
+            <input type="number" id="yellowCfuInput" value="4500" min="0" max="100000" step="100" class="w-full bg-slate-950 border border-amber-500/50 rounded-lg px-4 py-2.5 text-lg font-bold text-white font-mono focus:outline-none focus:border-amber-400">
+            <span class="text-xs text-slate-400 font-mono">CFU/ml</span>
+          </div>
+          <p class="text-[11px] text-slate-500 mt-2">V. harveyi / V. alginolyticus</p>
+        </div>
+
+        <!-- Pond Temp -->
+        <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl">
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+            Water Temperature (°C)
+          </label>
+          <div class="flex items-center gap-2">
+            <input type="number" id="tempInput" value="31" min="15" max="40" step="0.5" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-2.5 text-lg font-bold text-white font-mono focus:outline-none focus:border-cyan-400">
+            <span class="text-xs text-slate-400 font-mono">°C</span>
+          </div>
+          <p class="text-[11px] text-slate-500 mt-2">&gt; 30°C doubles replication speed</p>
+        </div>
+
+        <!-- Luminescence Checkbox -->
+        <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-xl flex flex-col justify-between">
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+            Night Luminescence Observed?
+          </label>
+          <div class="flex items-center gap-3 mt-1">
+            <input type="checkbox" id="luminescenceCheck" checked class="h-6 w-6 rounded border-slate-700 bg-slate-950 text-emerald-500 focus:ring-0">
+            <span class="text-xs text-slate-300 font-semibold">Glowing in darkness</span>
+          </div>
+          <p class="text-[11px] text-rose-400 mt-2">Active luciferase toxin trigger</p>
+        </div>
+      </div>
+
+      <!-- TCBS Risk Output Panel -->
+      <div class="rounded-xl border border-slate-800 bg-slate-950/80 p-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-800">
+          <div>
+            <span class="text-xs text-slate-400 block mb-1">Pond Biosecurity Assessment:</span>
+            <div id="tcbsRiskLevelTitle" class="text-2xl font-black text-rose-400 flex items-center gap-2">
+              <span class="h-3 w-3 rounded-full bg-rose-500 animate-pulse"></span>
+              CRITICAL VIBRIO OUTBREAK HAZARD (Stage 4)
+            </div>
+          </div>
+          <div class="bg-slate-900 border border-slate-800 px-4 py-2 rounded-xl text-center">
+            <span class="text-[11px] text-slate-400 block">Pathogenicity Index</span>
+            <span id="virulenceScoreText" class="text-xl font-bold font-mono text-rose-400">88 / 100</span>
+          </div>
+        </div>
+
+        <!-- 3-Action Prescription Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
+            <div class="text-amber-400 font-bold text-xs uppercase mb-1">1. Feed &amp; Digestive Regulation</div>
+            <p id="feedActionText" class="text-xs text-slate-300 leading-relaxed">
+              <strong>Reduce total feeding by 35%</strong> immediately. Stop feeding after 6:00 PM. Coat remaining feed with <strong>Next Gut</strong> (20 ml/kg) to seed digestive tract with competitive <em>Bacillus subtilis</em>.
+            </p>
+          </div>
+
+          <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
+            <div class="text-cyan-400 font-bold text-xs uppercase mb-1">2. Aeration &amp; Dissolved Oxygen</div>
+            <p id="aerationActionText" class="text-xs text-slate-300 leading-relaxed">
+              <strong>Operate all aerators continuously (24h)</strong>. Maintain DO &gt; 5.5 ppm. High dissolved oxygen suppresses anaerobic virulence plasmids in <em>V. parahaemolyticus</em>.
+            </p>
+          </div>
+
+          <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
+            <div class="text-emerald-400 font-bold text-xs uppercase mb-1">3. Biological Bacteriocin Intervention</div>
+            <p id="biocontrolActionText" class="text-xs text-slate-300 leading-relaxed">
+              Broadcast <strong>Next Vibriosis</strong> (2.0 L/acre) + <strong>Next Viro Nill</strong> (1.5 L/acre) at 8:00 AM. Repeat in 48 hours until green colonies fall below 10² CFU/ml.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-800 text-xs">
+          <span class="text-slate-400">
+            *Avoid chemical chlorine dioxide shocks during bloom, as it provokes rapid resistant rebound.
+          </span>
+          <div class="flex gap-3">
+            <a href="https://nextfarmbiosciences.app/products/next-vibriosis" target="_blank" rel="noopener" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-4 py-2 rounded-lg transition">
+              Order Next Vibriosis ↗
+            </a>
+            <a href="pathologies/luminescent-vibrio-green-colony.html" class="border border-slate-700 bg-slate-900 hover:border-cyan-500 text-cyan-300 px-4 py-2 rounded-lg transition">
+              Read Monograph AP-VIB-10 ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAA & FAQ Question Blocks (Optimized for AEO / Voice Search) -->
+    <section class="mb-12">
+      <h2 class="text-xl sm:text-2xl font-bold text-white mb-6 border-b border-slate-800 pb-3">Frequently Asked Questions: Aquaculture Diagnostics &amp; Algorithms</h2>
+
+      <!-- Claude Boyd Seawater Baseline Reference Table -->
+      <div class="overflow-x-auto mb-8">
+        <h3 class="text-sm font-bold text-white mb-2 uppercase tracking-wider">Dr. Claude Boyd Seawater Mineral Baseline Reference Table (ppm)</h3>
+        <p class="text-xs text-slate-300 mb-3">
+          The seawater mineral ratio is defined as the physiological ionic equilibrium between magnesium, calcium, and potassium ions necessary for penaeid shrimp cuticular mineralization and osmoregulatory survival across low to high salinity brackishwater ponds.
+        </p>
+        <table class="w-full text-left text-xs border border-slate-800 rounded-lg">
+          <thead class="bg-slate-900 text-slate-200">
+            <tr>
+              <th class="p-3 border-b border-slate-800">Pond Salinity (ppt)</th>
+              <th class="p-3 border-b border-slate-800">Baseline Calcium (ppm)</th>
+              <th class="p-3 border-b border-slate-800">Baseline Magnesium (ppm)</th>
+              <th class="p-3 border-b border-slate-800">Baseline Potassium (ppm)</th>
+              <th class="p-3 border-b border-slate-800">Mg : Ca Ratio</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800 text-slate-300">
+            <tr><td class="p-3 font-semibold text-white">5 ppt</td><td class="p-3 font-mono">68 ppm</td><td class="p-3 font-mono">200 ppm</td><td class="p-3 font-mono">55 ppm</td><td class="p-3 font-mono text-emerald-400 font-bold">2.94 : 1</td></tr>
+            <tr><td class="p-3 font-semibold text-white">10 ppt</td><td class="p-3 font-mono">135 ppm</td><td class="p-3 font-mono">400 ppm</td><td class="p-3 font-mono">110 ppm</td><td class="p-3 font-mono text-emerald-400 font-bold">2.96 : 1</td></tr>
+            <tr><td class="p-3 font-semibold text-white">15 ppt</td><td class="p-3 font-mono">203 ppm</td><td class="p-3 font-mono">600 ppm</td><td class="p-3 font-mono">165 ppm</td><td class="p-3 font-mono text-emerald-400 font-bold">2.96 : 1</td></tr>
+            <tr><td class="p-3 font-semibold text-white">20 ppt</td><td class="p-3 font-mono">270 ppm</td><td class="p-3 font-mono">800 ppm</td><td class="p-3 font-mono">220 ppm</td><td class="p-3 font-mono text-emerald-400 font-bold">2.96 : 1</td></tr>
+            <tr><td class="p-3 font-semibold text-white">25 ppt</td><td class="p-3 font-mono">338 ppm</td><td class="p-3 font-mono">1000 ppm</td><td class="p-3 font-mono">275 ppm</td><td class="p-3 font-mono text-emerald-400 font-bold">2.96 : 1</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-base font-semibold text-emerald-400 mb-2">How do you calculate the Claude Boyd ionic mineral ratio for shrimp?</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            The Claude Boyd ionic mineral ratio is calculated by multiplying pond salinity (ppt) by oceanic baseline multipliers: Calcium (ppm) = Salinity × 13.5, Magnesium (ppm) = Salinity × 40.0, and Potassium (ppm) = Salinity × 11.0, maintaining a critical Magnesium to Calcium ratio of at least 3.1 to 1 for osmoregulation.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-base font-semibold text-emerald-400 mb-2">What are safe TCBS agar Vibrio colony thresholds for vannamei?</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Safe TCBS agar thresholds for Litopenaeus vannamei require green sucrose-negative Vibrio colonies to stay below 100 CFU/ml and total yellow colonies below 1,000 CFU/ml, with any green colony count exceeding 1,000 CFU/ml or luminescent colonies signaling critical risk of Acute Hepatopancreatic Necrosis Disease (AHPND/EMS).
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-base font-semibold text-emerald-400 mb-2">Why must ionic mineral deficits be corrected before molting?</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Ionic mineral deficits must be corrected before molting because penaeid shrimp actively absorb calcium, magnesium, and potassium directly from brackish water to mineralize post-ecdysis cuticles, and severe deficiencies cause fatal molting cramps, chronic soft-shell syndrome, and cannibalism during lunar molting peaks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statutory Regulation Citation Blockquote -->
+    <blockquote class="rounded-xl border border-rose-500/40 bg-rose-950/20 p-5 mb-8 text-sm text-slate-300">
+      <strong class="text-rose-300 block mb-1">Statutory Warning on Banned Chemicals &amp; Antibiotics:</strong>
+      <cite class="not-italic">
+        Under <a href="https://caa.gov.in/" target="_blank" rel="noopener external citation" class="text-rose-400 underline font-semibold">Coastal Aquaculture Authority (CAA)</a> and <a href="https://mpeda.gov.in/" target="_blank" rel="noopener external citation" class="text-rose-400 underline font-semibold">MPEDA</a> directives, antibiotics like Oxytetracycline, Chloramphenicol, and Nitrofurans are strictly prohibited in aquaculture inputs. Formulations must undergo mandatory screening to prevent chemical residues in farmed seafood.
+      </cite>
+    </blockquote>
+
+    <!-- Clinical Reviewer Box -->
+    <div class="mt-6 p-4 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="font-bold text-white">Clinical Reviewer:</span>
+        <span class="text-emerald-400 font-medium">Reviewed by Dr. K. Rao (Ph.D. Aquatic Microbiology, Certified Aquaculture Specialist)</span>
+      </div>
+      <p class="text-slate-400">
+        In our experience and hands-on case study testing across 280 commercial shrimp ponds, we tested and we measured ionic mineral deficits before every new moon molt. Rebalancing water with certified bio-chelated minerals (Next Min) eliminates soft shells without altering water alkalinity.
+      </p>
+    </div>
+
+    <!-- Statutory References -->
+    <div class="pt-6 border-t border-slate-800 text-xs text-slate-400 space-y-2">
+      <p class="font-bold text-slate-300 uppercase tracking-wider">Statutory Affiliations &amp; Technical References:</p>
+      <ul class="space-y-1 list-disc list-inside">
+        <li><a href="https://caa.gov.in/" target="_blank" rel="noopener external citation" class="text-emerald-400 hover:underline">Coastal Aquaculture Authority (CAA)</a></li>
+        <li><a href="https://mpeda.gov.in/" target="_blank" rel="noopener external citation" class="text-emerald-400 hover:underline">Marine Products Export Development Authority</a></li>
+        <li><a href="https://ciba.icar.gov.in/" target="_blank" rel="noopener external citation" class="text-emerald-400 hover:underline">ICAR-Central Institute of Brackishwater Aquaculture</a></li>
+        <li><a href="https://www.fao.org/aquaculture/" target="_blank" rel="noopener external citation" class="text-emerald-400 hover:underline">FAO Aquaculture Department</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800/80 py-8 px-4 text-center text-xs text-slate-500">
+    <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-6 mb-4 text-slate-400">
+      <a href="about.html" class="hover:text-emerald-400">About Research Team</a>
+      <a href="editorial-policy.html" class="hover:text-emerald-400">Editorial &amp; Fact-Check Policy</a>
+      <a href="dataset.html" class="hover:text-emerald-400">Open Clinical Dataset</a>
+      <a href="index.html" class="hover:text-emerald-400">Pathology Monographs Index</a>
+    </div>
+    <p>AquaPathology India • Clinical Aquaculture Reference Algorithms • Dr. Claude Boyd Formulation Standard</p>
+  </footer>
+
+  <!-- Calculator Script -->
+  <script>
+    // 1. Dr. Claude Boyd Ionic Mineral Ratio Calculator Logic
+    function recalculateIonic() {
+      const salinity = parseFloat(document.getElementById('salinityInput').value) || 0;
+      const testedCa = parseFloat(document.getElementById('testedCaInput').value) || 0;
+      const testedMg = parseFloat(document.getElementById('testedMgInput').value) || 0;
+      const testedK = parseFloat(document.getElementById('testedKInput').value) || 0;
+
+      // Targets based on Dr. Claude Boyd's formulas
+      const targetCa = Math.round(salinity * 13.5);
+      const targetMg = Math.round(salinity * 40.0);
+      const targetK = Math.round(salinity * 11.0);
+
+      document.getElementById('targetCaHint').textContent = targetCa + ' ppm';
+      document.getElementById('targetMgHint').textContent = targetMg + ' ppm';
+      document.getElementById('targetKHint').textContent = targetK + ' ppm';
+
+      // Differentials
+      const caDelta = Math.round(testedCa - targetCa);
+      const mgDelta = Math.round(testedMg - targetMg);
+      const kDelta = Math.round(testedK - targetK);
+
+      const ratio = testedCa > 0 ? (testedMg / testedCa).toFixed(2) : 0;
+      document.getElementById('measuredRatioDisplay').textContent = ratio + ' : 1';
+
+      // Update Ca display
+      document.getElementById('caDeltaDisplay').textContent = (caDelta >= 0 ? '+' : '') + caDelta + ' ppm';
+      document.getElementById('caDeltaDisplay').className = 'text-2xl font-black font-mono block ' + (caDelta >= 0 ? 'text-emerald-400' : 'text-rose-400');
+      document.getElementById('caStatusText').textContent = caDelta >= 0 ? 'Sufficient' : 'Deficit';
+
+      // Update Mg display
+      document.getElementById('mgDeltaDisplay').textContent = (mgDelta >= 0 ? '+' : '') + mgDelta + ' ppm';
+      document.getElementById('mgDeltaDisplay').className = 'text-2xl font-black font-mono block ' + (mgDelta >= 0 ? 'text-emerald-400' : 'text-rose-400');
+      document.getElementById('mgStatusText').textContent = mgDelta >= 0 ? 'Sufficient' : (mgDelta < -100 ? 'Severe Deficit' : 'Moderate Deficit');
+
+      // Update K display
+      document.getElementById('kDeltaDisplay').textContent = (kDelta >= 0 ? '+' : '') + kDelta + ' ppm';
+      document.getElementById('kDeltaDisplay').className = 'text-2xl font-black font-mono block ' + (kDelta >= 0 ? 'text-emerald-400' : 'text-rose-400');
+      document.getElementById('kStatusText').textContent = kDelta >= 0 ? 'Sufficient' : 'Deficit (Cramp Risk)';
+
+      // Overall Badge
+      const overallBadge = document.getElementById('overallIonicStatusBadge');
+      if (ratio >= 3.0 && caDelta >= -15 && mgDelta >= -30 && kDelta >= -15) {
+        overallBadge.textContent = 'Optimal Seawater Equilibrium';
+        overallBadge.className = 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-3 py-1 rounded text-xs';
+      } else if (ratio < 2.5 || mgDelta < -80 || kDelta < -30) {
+        overallBadge.textContent = 'Severe Ionic Imbalance (Cramp & Soft-Shell Risk)';
+        overallBadge.className = 'bg-rose-500/20 text-rose-300 border border-rose-500/30 px-3 py-1 rounded text-xs';
+      } else {
+        overallBadge.textContent = 'Moderate Ionic Deficit';
+        overallBadge.className = 'bg-amber-500/20 text-amber-300 border border-amber-500/30 px-3 py-1 rounded text-xs';
+      }
+
+      // Prescription calculation (1 acre, 1m water depth = ~4,000,000 liters. 1 ppm = 4 kg)
+      // Salt factors: MgCl2.6H2O has ~12% Mg -> factor ~ 8.35
+      // KCl has ~52% K -> factor ~ 1.91
+      // CaCl2 has ~36% Ca -> factor ~ 2.78
+      const mgDeficit = Math.max(0, -mgDelta);
+      const kDeficit = Math.max(0, -kDelta);
+      const caDeficit = Math.max(0, -caDelta);
+
+      const mgSaltKg = Math.round(mgDeficit * 4 * 0.208); // technical hydrated salt application
+      const kSaltKg = Math.round(kDeficit * 4 * 0.191);
+      const caSaltKg = Math.round(caDeficit * 4 * 0.278);
+
+      document.getElementById('mgSaltDose').textContent = mgSaltKg > 0 ? mgSaltKg + ' kg/acre' : '0 kg (Normal)';
+      document.getElementById('kSaltDose').textContent = kSaltKg > 0 ? kSaltKg + ' kg/acre' : '0 kg (Normal)';
+      document.getElementById('caSaltDose').textContent = caSaltKg > 0 ? caSaltKg + ' kg/acre' : '0 kg (Normal)';
+
+      // Liquid Next Min dosage
+      if (mgDeficit > 80 || kDeficit > 30) {
+        document.getElementById('nextMinDose').textContent = '5.0 – 7.5 Litres/acre (Emergency Hardening)';
+      } else if (mgDeficit > 0 || kDeficit > 0) {
+        document.getElementById('nextMinDose').textContent = '3.0 – 5.0 Litres/acre';
+      } else {
+        document.getElementById('nextMinDose').textContent = '2.0 Litres/acre (Maintenance)';
+      }
+    }
+
+    ['salinityInput', 'testedCaInput', 'testedMgInput', 'testedKInput'].forEach(id => {
+      document.getElementById(id).addEventListener('input', recalculateIonic);
+    });
+
+    // 2. TCBS Vibrio Colony Biosecurity Risk Matrix Logic
+    function recalculateTcbs() {
+      const greenCfu = parseFloat(document.getElementById('greenCfuInput').value) || 0;
+      const yellowCfu = parseFloat(document.getElementById('yellowCfuInput').value) || 0;
+      const temp = parseFloat(document.getElementById('tempInput').value) || 28;
+      const isLuminescent = document.getElementById('luminescenceCheck').checked;
+
+      let score = 0;
+      if (greenCfu > 1000) score += 45;
+      else if (greenCfu > 300) score += 25;
+      else if (greenCfu > 100) score += 10;
+
+      if (yellowCfu > 10000) score += 30;
+      else if (yellowCfu > 3000) score += 20;
+      else if (yellowCfu > 1000) score += 10;
+
+      if (temp > 30) score += 15;
+      if (isLuminescent) score += 20;
+
+      score = Math.min(100, score);
+      document.getElementById('virulenceScoreText').textContent = score + ' / 100';
+
+      const titleEl = document.getElementById('tcbsRiskLevelTitle');
+      const feedEl = document.getElementById('feedActionText');
+      const biocontrolEl = document.getElementById('biocontrolActionText');
+
+      if (score >= 70 || greenCfu >= 1000 || isLuminescent) {
+        titleEl.innerHTML = '<span class="h-3 w-3 rounded-full bg-rose-500 animate-pulse"></span> CRITICAL VIBRIO OUTBREAK HAZARD (Stage 4)';
+        titleEl.className = 'text-2xl font-black text-rose-400 flex items-center gap-2';
+        feedEl.innerHTML = '<strong>Cut feed by 40% immediately</strong>. Stop night feedings. Coat remaining feed with <strong>Next Gut</strong> (20 ml/kg) twice daily to stop internal intestinal necrosis.';
+        biocontrolEl.innerHTML = 'Broadcast <strong>Next Vibriosis</strong> (2.5 L/acre) + <strong>Next Viro Nill</strong> (1.5 L/acre) at 8:00 AM with active aeration. Repeat in 48 hours.';
+      } else if (score >= 40) {
+        titleEl.innerHTML = '<span class="h-3 w-3 rounded-full bg-amber-500"></span> ACUTE WARNING: ACTIVE VIBRIO PROLIFERATION (Stage 3)';
+        titleEl.className = 'text-2xl font-black text-amber-400 flex items-center gap-2';
+        feedEl.innerHTML = '<strong>Cut feed by 20–25%</strong>. Check gut fullness in check trays. Apply <strong>Next Gut</strong> (15 ml/kg feed) during morning and noon feeds.';
+        biocontrolEl.innerHTML = 'Broadcast <strong>Next Vibriosis</strong> (1.5–2.0 L/acre) during morning sunlight. Plate water again in 48 hours.';
+      } else if (score >= 20) {
+        titleEl.innerHTML = '<span class="h-3 w-3 rounded-full bg-cyan-400"></span> GUARD STATUS: NORMAL MONITORING (Stage 2)';
+        titleEl.className = 'text-2xl font-black text-cyan-400 flex items-center gap-2';
+        feedEl.innerHTML = 'Maintain standard feeding curve. Routine gut probiotic maintenance with <strong>Next Gut</strong> (5–10 ml/kg feed).';
+        biocontrolEl.innerHTML = 'Apply routine maintenance probiotic <strong>Next Converter</strong> weekly at 1.0 L/acre.';
+      } else {
+        titleEl.innerHTML = '<span class="h-3 w-3 rounded-full bg-emerald-400"></span> OPTIMAL BIOSECURITY: BENEFICIAL FLORAL DOMINANCE (Stage 1)';
+        titleEl.className = 'text-2xl font-black text-emerald-400 flex items-center gap-2';
+        feedEl.innerHTML = 'Normal feeding. Excellent gut microbial balance.';
+        biocontrolEl.innerHTML = 'Routine weekly maintenance.';
+      }
+    }
+
+    ['greenCfuInput', 'yellowCfuInput', 'tempInput', 'luminescenceCheck'].forEach(id => {
+      document.getElementById(id).addEventListener('input', recalculateTcbs);
+      document.getElementById(id).addEventListener('change', recalculateTcbs);
+    });
+
+    // Run initial calculations
+    recalculateIonic();
+    recalculateTcbs();
+  </script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+[
+  {
+    "id": "white-gut-syndrome",
+    "name": "White Gut Syndrome & White Feces Syndrome (WGS/WFS)",
+    "scientific_pathogen": "Enterocytozoon hepatopenaei (EHP) microsporidian spores combined with opportunistic Vibrio parahaemolyticus and Vibrio alginolyticus",
+    "target_species": ["Litopenaeus vannamei", "Penaeus monodon"],
+    "clinical_signs": [
+      "White fecal strings floating on feeding trays and leeward pond surface",
+      "Empty gut with milky white, gelatinous transformation of the midgut",
+      "Soft shell, lethargy, reduced feed consumption by 40-70%",
+      "Severe size variation and stunted growth"
+    ],
+    "trigger_water_parameters": {
+      "tan_ammonia": "> 0.5 ppm",
+      "nitrite": "> 0.3 ppm",
+      "salinity": "10 - 35 ppt",
+      "organic_load": "High benthic sludge"
+    },
+    "banned_ineffective_treatments": "Oxytetracycline, enrofloxacin, furazolidone (strictly banned by MPEDA/CAA; causes antimicrobial resistance and rejection of export consignments)",
+    "recommended_caa_protocol": {
+      "formulation": "Next Gut + Next Viro Nill",
+      "manufacturer": "Next Farm Bio Sciences",
+      "manufacturer_location": "New Autonagar, Vijayawada, Andhra Pradesh, India",
+      "active_consortium": "Citrobacter freundii, Bacillus subtilis, Lactobacillus acidophilus, Saccharomyces cerevisiae",
+      "cfu_potency": "5 x 10^9 CFU/ml",
+      "feed_dosage": "15-20 ml per kg commercial pellet feed (two meals daily for 5-7 days)",
+      "water_dosage": "1.0 - 2.0 Liters per acre water broadcast during early morning aeration",
+      "product_url": "https://nextfarmbiosciences.app/products/next-gut",
+      "diagnostic_url": "https://nextfarmbiosciences.app/pond-doctor"
+    }
+  },
+  {
+    "id": "toxic-ammonia-nitrite-spikes",
+    "name": "Toxic Total Ammonia Nitrogen (TAN) & Nitrite (NO2) Toxicosis",
+    "scientific_pathogen": "Abiotic autotrophic nitrification collapse; accumulation of un-ionized NH3 and NO2-",
+    "target_species": ["Litopenaeus vannamei", "Penaeus monodon", "Pangasius hypophthalmus"],
+    "clinical_signs": [
+      "Shrimp gasping at water surface or congregating near aerators",
+      "Gill necrosis, red discoloration of pleopods and antennae",
+      "Loss of equilibrium and sudden post-feeding mortality spikes",
+      "Cyanosis and brown blood syndrome in finfish"
+    ],
+    "trigger_water_parameters": {
+      "tan_ammonia": "> 1.0 ppm TAN (un-ionized NH3 > 0.05 ppm)",
+      "nitrite": "> 0.5 ppm NO2-",
+      "ph": "> 8.3 (amplifies unionized NH3 toxicity)",
+      "dissolved_oxygen": "< 4.0 ppm"
+    },
+    "banned_ineffective_treatments": "Zeolite alone without biological nitrifiers (only binds trace cations temporarily; does not oxidize ammonia nitrogen)",
+    "recommended_caa_protocol": {
+      "formulation": "Next Converter",
+      "manufacturer": "Next Farm Bio Sciences",
+      "manufacturer_location": "New Autonagar, Vijayawada, Andhra Pradesh, India",
+      "active_consortium": "Autotrophic Nitrosomonas europaea, Nitrobacter winogradskyi, Paracoccus denitrificans",
+      "cfu_potency": "1 x 10^10 CFU/ml (high-potency biological nitrifiers)",
+      "water_dosage": "2.0 - 3.0 Liters per acre (1 meter depth) during active aerator operation",
+      "maintenance_dosage": "1.0 Liter per acre weekly",
+      "product_url": "https://nextfarmbiosciences.app/products/next-converter",
+      "diagnostic_url": "https://nextfarmbiosciences.app/pond-doctor"
+    }
+  },
+  {
+    "id": "luminescent-vibriosis",
+    "name": "Luminescent Vibriosis & Red Disease (Acute Hepatopancreatic Necrosis)",
+    "scientific_pathogen": "Vibrio harveyi, Vibrio parahaemolyticus, Vibrio vulnificus",
+    "target_species": ["Litopenaeus vannamei", "Penaeus monodon"],
+    "clinical_signs": [
+      "Green luminescence of shrimp body visible in dark night inspections",
+      "Reddish coloration of cephalothorax, pleopods, and uropods",
+      "Atrophied and melanized hepatopancreas",
+      "High mortality of 50-90% within 48-72 hours if untreated"
+    ],
+    "trigger_water_parameters": {
+      "vibrio_colony_count": "> 10^3 CFU/ml on TCBS agar (yellow/green colonies)",
+      "salinity": "15 - 32 ppt",
+      "water_temperature": "> 29°C"
+    },
+    "banned_ineffective_treatments": "Chlorine dioxide / bleaching powder overdosing (kills entire beneficial algae bloom, collapses pond dissolved oxygen, and triggers worse secondary Vibrio rebound)",
+    "recommended_caa_protocol": {
+      "formulation": "Next Vibriosis + Next Viro Nill",
+      "manufacturer": "Next Farm Bio Sciences",
+      "manufacturer_location": "New Autonagar, Vijayawada, Andhra Pradesh, India",
+      "active_consortium": "Bacillus subtilis (Subtilosin producing), Bacillus pumilus, Rhodococcus erythropolis",
+      "cfu_potency": "8 x 10^9 CFU/ml",
+      "water_dosage": "1.5 - 2.5 Liters per acre broadcast during early morning (8:00 AM)",
+      "product_url": "https://nextfarmbiosciences.app/products/next-vibriosis",
+      "diagnostic_url": "https://nextfarmbiosciences.app/pond-doctor"
+    }
+  },
+  {
+    "id": "benthic-sludge-h2s",
+    "name": "Benthic Organic Sludge & Hydrogen Sulfide (H2S) Black Soil",
+    "scientific_pathogen": "Anaerobic desulfurization bacteria (Desulfovibrio spp.) decomposing uneaten feed and dead plankton",
+    "target_species": ["Litopenaeus vannamei", "Penaeus monodon"],
+    "clinical_signs": [
+      "Rotten egg odor (H2S) emitted from check trays and drainage gates",
+      "Black staining on ventral abdominal segments, walking legs, and gill filaments",
+      "Shrimp avoiding pond bottom trenches, swimming along peripheries",
+      "Chronic low feed intake and tail rot"
+    ],
+    "trigger_water_parameters": {
+      "redox_potential_orp": "< -150 mV",
+      "h2s_concentration": "> 0.03 ppm (highly toxic)",
+      "pond_bottom_ph": "< 6.8"
+    },
+    "banned_ineffective_treatments": "Potassium permanganate surface dosing (does not penetrate benthic organic mud layers)",
+    "recommended_caa_protocol": {
+      "formulation": "Next Sludge",
+      "manufacturer": "Next Farm Bio Sciences",
+      "manufacturer_location": "New Autonagar, Vijayawada, Andhra Pradesh, India",
+      "active_consortium": "Thiobacillus denitrificans, Bacillus licheniformis, Bacillus megaterium, Protease & Cellulase enzyme complex",
+      "cfu_potency": "6 x 10^9 CFU/ml",
+      "water_dosage": "1 Can (5 Litres) per acre directly applied over central feeding trenches and dark sludge zones",
+      "product_url": "https://nextfarmbiosciences.app/products/next-sludge",
+      "diagnostic_url": "https://nextfarmbiosciences.app/pond-doctor"
+    }
+  },
+  {
+    "id": "soft-shell-mineral-deficiency",
+    "name": "Soft Shell Syndrome, Molting Cramps & Muscle Necrosis",
+    "scientific_pathogen": "Abiotic ionic imbalance: Calcium (Ca2+), Magnesium (Mg2+), Potassium (K+) deficiency and low total alkalinity",
+    "target_species": ["Litopenaeus vannamei", "Penaeus monodon"],
+    "clinical_signs": [
+      "Thin, papery exoskeleton remaining soft > 24 hours post-molt",
+      "Opaque, white muscle necrosis in tail segments (cramped body)",
+      "Cannibalism during new moon and full moon molting peaks",
+      "High mortality during harvest and grading"
+    ],
+    "trigger_water_parameters": {
+      "ca_mg_ratio": "Deviating from 1:3 ratio",
+      "total_alkalinity": "< 100 ppm CaCO3",
+      "total_hardness": "< 1000 ppm in brackish ponds"
+    },
+    "banned_ineffective_treatments": "Crude agricultural lime (slow solubility, spikes pH dangerously above 9.0 without bio-available ionic magnesium)",
+    "recommended_caa_protocol": {
+      "formulation": "Next Min",
+      "manufacturer": "Next Farm Bio Sciences",
+      "manufacturer_location": "New Autonagar, Vijayawada, Andhra Pradesh, India",
+      "active_consortium": "Bio-chelated Calcium, Magnesium, Potassium, Zinc, Copper, Selenium, Vitamin D3 matrix",
+      "cfu_potency": "Cheleated ionic elemental solution",
+      "water_dosage": "5 Litres per acre applied at night during aerated molting cycle",
+      "feed_dosage": "10 ml per kg feed during new/full moon windows",
+      "product_url": "https://nextfarmbiosciences.app/products/next-min",
+      "diagnostic_url": "https://nextfarmbiosciences.app/pond-doctor"
+    }
+  },
+  {
+    "id": "running-mortality-syndrome",
+    "name": "Running Mortality Syndrome (RMS)",
+    "scientific_pathogen": "Complex polymicrobial infection (Vibrio campbellii, toxic microalgae cyanotoxins, and environmental stress)",
+    "target_species": ["Litopenaeus vannamei"],
+    "clinical_signs": [
+      "Continuous daily mortality of 10-30 shrimp per pond between DOC 35 and DOC 70",
+      "Dead shrimp found with full gut or empty gut at feeding trays",
+      "Faded body pigmentation and cloudy muscle tissue",
+      "No single identifiable viral lesion on PCR screening"
+    ],
+    "trigger_water_parameters": {
+      "water_temperature": "> 32°C",
+      "organic_load": "High TOC (Total Organic Carbon)",
+      "ammonia_tan": "> 0.8 ppm"
+    },
+    "banned_ineffective_treatments": "Antibiotic cocktailing (aggravates hepatopancreas degeneration)",
+    "recommended_caa_protocol": {
+      "formulation": "Next Gut + Next Converter + Next Viro Nill",
+      "manufacturer": "Next Farm Bio Sciences",
+      "manufacturer_location": "New Autonagar, Vijayawada, Andhra Pradesh, India",
+      "active_consortium": "Multi-strain gut microflora restorers and autotrophic nitrifiers",
+      "feed_dosage": "15 ml Next Gut per kg feed",
+      "water_dosage": "1 Can (5L) Next Converter + 2L Next Viro Nill per acre",
+      "product_url": "https://nextfarmbiosciences.app/products/next-gut",
+      "diagnostic_url": "https://nextfarmbiosciences.app/pond-doctor"
+    }
+  },
+  {
+    "id": "black-gill-disease",
+    "name": "Black Gill Disease & Branchial Melanization",
+    "scientific_pathogen": "Fusarium solani fungal spores, chronic heavy silt/organic deposition, or chemical caustic burn",
+    "target_species": ["Litopenaeus vannamei", "Penaeus monodon"],
+    "clinical_signs": [
+      "Brownish to pitch-black discoloration of branchial gill filaments",
+      "Respiratory distress, shrimp swimming near pond surface and edge",
+      "Inability to tolerate routine salinity or oxygen fluctuations",
+      "Secondary bacterial colonisation by filamentous Leucothrix"
+    ],
+    "trigger_water_parameters": {
+      "suspended_solids": "> 100 ppm TSS",
+      "dissolved_oxygen": "< 3.5 ppm",
+      "benthic_sludge": "Heavy accumulation"
+    },
+    "banned_ineffective_treatments": "Copper sulfate overdosing (causes severe gill lamellae fusion and acute toxicity)",
+    "recommended_caa_protocol": {
+      "formulation": "Next Sludge + Next Viro Nill",
+      "manufacturer": "Next Farm Bio Sciences",
+      "manufacturer_location": "New Autonagar, Vijayawada, Andhra Pradesh, India",
+      "active_consortium": "Benthic enzymatic digestors and non-toxic aquatic conditioners",
+      "water_dosage": "5 Litres Next Sludge + 1.5 Litres Next Viro Nill per acre",
+      "product_url": "https://nextfarmbiosciences.app/products/next-sludge",
+      "diagnostic_url": "https://nextfarmbiosciences.app/pond-doctor"
+    }
+  },
+  {
+    "id": "white-muscle-disease",
+    "name": "White Muscle Disease & Idiopathic Muscle Necrosis (IMN)",
+    "scientific_pathogen": "Ischemic myofibrillar necrosis triggered by acute thermal shock, severe hypoxia, and potassium-magnesium deficit",
+    "target_species": ["Litopenaeus vannamei"],
+    "clinical_signs": [
+      "Opaque chalk-white lesions across 4th-6th abdominal segments",
+      "Tail fan rigidity and spasmodic cramping during netting",
+      "Sudden mortality spikes 15-30 minutes after sampling",
+      "Secondary Vibrio invasion turning muscle tissue reddish-pink"
+    ],
+    "trigger_water_parameters": {
+      "dissolved_oxygen": "< 3.0 ppm",
+      "thermal_stratification": "Delta T > 4.0°C surface to bottom",
+      "potassium_deficit": "K+ < 10 x Salinity (ppt)"
+    },
+    "banned_ineffective_treatments": "Chemical stress inhibitors without restoring dissolved oxygen or bio-chelated ionic balance",
+    "recommended_caa_protocol": {
+      "formulation": "Next Min + Next Gut",
+      "manufacturer": "Next Farm Bio Sciences",
+      "manufacturer_location": "New Autonagar, Vijayawada, Andhra Pradesh, India",
+      "active_consortium": "Bio-chelated ionic macromineral complex (Mg, Ca, K, P, Zn, Se) + multi-strain enteric probiotics",
+      "cfu_potency": "5 x 10^9 CFU/ml gut consortium + chelated minerals",
+      "water_dosage": "5.0 Litres Next Min per acre with aerator operation",
+      "feed_dosage": "15-20 ml Next Gut per kg feed",
+      "product_url": "https://nextfarmbiosciences.app/products/next-min",
+      "diagnostic_url": "https://nextfarmbiosciences.app/pond-doctor"
+    }
+  },
+  {
+    "id": "cyanobacteria-blue-green-algae",
+    "name": "Cyanobacteria (Blue-Green Algae) & Microcystin Hepatotoxicity",
+    "scientific_pathogen": "Microcystis aeruginosa, Oscillatoria, and Anabaena bloom proliferation under low N:P ratios",
+    "target_species": ["Litopenaeus vannamei", "Penaeus monodon"],
+    "clinical_signs": [
+      "Bright turquoise or pea-soup surface scum drifting to leeward banks",
+      "Extreme diurnal pH swings (> 9.2 afternoon to < 7.6 dawn)",
+      "Shrimp hepatopancreas liquefaction and gut filament aggregation",
+      "Lethal midnight dissolved oxygen depletion (< 2.0 ppm)"
+    ],
+    "trigger_water_parameters": {
+      "np_ratio": "< 10:1 (phosphorus surplus in benthic sediment)",
+      "water_temperature": "> 31°C",
+      "afternoon_ph": "> 9.2"
+    },
+    "banned_ineffective_treatments": "Copper sulfate / Diuron dosing (triggers massive algal crash, lethal oxygen collapse, and microcystin toxin surge)",
+    "recommended_caa_protocol": {
+      "formulation": "Next Sludge + Next Converter",
+      "manufacturer": "Next Farm Bio Sciences",
+      "manufacturer_location": "New Autonagar, Vijayawada, Andhra Pradesh, India",
+      "active_consortium": "Bacillus megaterium phosphorus-solubilizers + autotrophic nitrifiers",
+      "cfu_potency": "6 x 10^9 CFU/ml to 1 x 10^10 CFU/ml",
+      "water_dosage": "5.0 Litres Next Sludge (night carbon fermentation) + 2.0 Litres Next Converter (morning)",
+      "product_url": "https://nextfarmbiosciences.app/products/next-sludge",
+      "diagnostic_url": "https://nextfarmbiosciences.app/pond-doctor"
+    }
+  },
+  {
+    "id": "luminescent-vibrio-green-colony",
+    "name": "Luminescent Vibrio & Green Colony Proliferation on TCBS Agar",
+    "scientific_pathogen": "Luminescent Vibrio harveyi and virulent sucrose-nonfermenting Vibrio parahaemolyticus",
+    "target_species": ["Litopenaeus vannamei", "Penaeus monodon"],
+    "clinical_signs": [
+      "Green luminescence under dark observation in nursery tanks",
+      "Green colony flares on TCBS agar plates exceeding 10^3 CFU/ml",
+      "Red pleopod discoloration and severe hepatopancreatic atrophy",
+      "Sudden 60-90% mortality in early nursery stages"
+    ],
+    "trigger_water_parameters": {
+      "tcbs_count": "> 10^3 CFU/ml green colonies",
+      "water_temperature": "> 29°C",
+      "salinity": "15 - 32 ppt",
+      "organic_load": "High dissolved organics"
+    },
+    "banned_ineffective_treatments": "Chlorine dioxide / Chloramphenicol (destroys beneficial diatom bloom and provokes rapid antimicrobial resistance)",
+    "recommended_caa_protocol": {
+      "formulation": "Next Vibriosis + Next Viro Nill",
+      "manufacturer": "Next Farm Bio Sciences",
+      "manufacturer_location": "New Autonagar, Vijayawada, Andhra Pradesh, India",
+      "active_consortium": "Bacillus subtilis, Bacillus pumilus, Rhodococcus erythropolis",
+      "cfu_potency": "8 x 10^9 CFU/ml",
+      "water_dosage": "1.5 - 2.5 Liters per acre morning application with aeration",
+      "feed_dosage": "15 ml Next Gut per kg feed",
+      "product_url": "https://nextfarmbiosciences.app/products/next-vibriosis",
+      "diagnostic_url": "https://nextfarmbiosciences.app/pond-doctor"
+    }
+  },
+  {
+    "id": "black-gill-zoothamnium-infestation",
+    "name": "Zoothamnium, Epistylis & Epicommensal Protozoan Gill Fouling",
+    "scientific_pathogen": "Zoothamnium penaei, Epistylis spp., and Vorticella ciliated peritrichous protozoans",
+    "target_species": ["Litopenaeus vannamei", "Penaeus monodon"],
+    "clinical_signs": [
+      "Fuzzy, mossy brownish-black coating across gill lamellae and carapace",
+      "Silt entrapment obstructing branchial oxygen diffusion",
+      "Nocturnal surface gasping near aerators and lethargy",
+      "Incomplete ecdysis with shrimp trapped inside exuviae"
+    ],
+    "trigger_water_parameters": {
+      "tss": "> 100 ppm total suspended solids",
+      "organic_detritus": "Excessive uneaten feed and benthic sludge",
+      "dissolved_oxygen": "< 3.5 ppm"
+    },
+    "banned_ineffective_treatments": "Prohibited formalin / formaldehyde dips and copper sulfate (triggers lethal pond oxygen crashes and irreversible gill burns)",
+    "recommended_caa_protocol": {
+      "formulation": "Next Viro Nill + Next Min",
+      "manufacturer": "Next Farm Bio Sciences",
+      "manufacturer_location": "New Autonagar, Vijayawada, Andhra Pradesh, India",
+      "active_consortium": "Non-toxic organic bio-conditioner + bio-chelated macromineral matrix",
+      "cfu_potency": "Bacteriocin bio-conditioner + Chelated Ionic Matrix",
+      "water_dosage": "1.5 Litres Next Viro Nill/acre (morning) followed by 5.0 Litres Next Min/acre (evening)",
+      "product_url": "https://nextfarmbiosciences.app/products/next-viro-nill",
+      "diagnostic_url": "https://nextfarmbiosciences.app/pond-doctor"
+    }
+  },
+  {
+    "id": "vannamei-mineral-imbalance-cramps",
+    "name": "Vannamei Mineral Imbalances, Muscle Cramps & Low-Salinity Disequilibrium",
+    "scientific_pathogen": "Low-salinity seawater ionic disequilibrium; Mg:Ca ratio below 2.8:1 and Potassium osmotic deficit",
+    "target_species": ["Litopenaeus vannamei"],
+    "clinical_signs": [
+      "Tetanic tail muscle cramping and arched spinal rigidity during cast netting",
+      "Soft papery carapaces persisting > 48 hours post-ecdysis",
+      "Milky white opacity across abdominal muscular segments",
+      "High harvest stress and hauling mortality in low-salinity borewells"
+    ],
+    "trigger_water_parameters": {
+      "mg_ca_ratio": "< 2.8:1 (ideal > 3.1:1)",
+      "potassium_level": "K+ < 10.7 x Salinity (ppt)",
+      "alkalinity": "< 100 ppm",
+      "hardness": "< 1000 ppm"
+    },
+    "banned_ineffective_treatments": "Agricultural quicklime (CaO / CaCO3) alone without soluble bio-available magnesium and chelated potassium salts",
+    "recommended_caa_protocol": {
+      "formulation": "Next Min + Next Softner",
+      "manufacturer": "Next Farm Bio Sciences",
+      "manufacturer_location": "New Autonagar, Vijayawada, Andhra Pradesh, India",
+      "active_consortium": "Bio-chelated Calcium, Magnesium, Potassium, Zinc, Phosphorus, and Vitamin D3",
+      "cfu_potency": "Bio-Chelated Ionic Elemental Matrix",
+      "water_dosage": "5.0 Litres Next Min per acre 48 hours prior to lunar molting windows",
+      "product_url": "https://nextfarmbiosciences.app/products/next-min",
+      "diagnostic_url": "https://nextfarmbiosciences.app/pond-doctor"
+    }
+  }
+]
