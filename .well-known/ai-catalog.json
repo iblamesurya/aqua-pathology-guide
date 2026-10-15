@@ -1,0 +1,26 @@
+{
+  "specVersion": "1.0",
+  "entries": [
+    {
+      "identifier": "urn:air:pathology.nextfarmbiosciences.app:clinical-index",
+      "displayName": "Next Farm Aqua Pathology Clinical Diagnostic Monograph Index",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://pathology.nextfarmbiosciences.app/llms.txt",
+      "representativeQueries": [
+        "What are the clinical symptoms and pathology of EHP in vannamei shrimp?",
+        "How to diagnose White Gut Disease in aquaculture shrimp?",
+        "What is the treatment protocol for Running Mortality Syndrome in shrimp farming?"
+      ]
+    },
+    {
+      "identifier": "urn:air:pathology.nextfarmbiosciences.app:dosing-calculator",
+      "displayName": "Next Farm Aquaculture Diagnostic Dosing & Pathology Calculator",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://pathology.nextfarmbiosciences.app/tools.html",
+      "representativeQueries": [
+        "Calculate active ingredient dosages for aquaculture pond pathology treatments",
+        "Shrimp mortality rate and pathogen severity diagnostic tool"
+      ]
+    }
+  ]
+}
